@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "junjielei9-annotdense"
+version = "0.1.0"
+description = "按结构键把条目聚类，标出训练数据的注释密度上的同组项与各组的代表样本"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "junjielei9" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://junjielei9.github.io"
+Repository = "https://github.com/junjielei9/annotdense"
+Issues = "https://github.com/junjielei9/annotdense/issues"
+
+[project.scripts]
+annotdense = "annotdense:main"
+
+[tool.setuptools]
+py-modules = ["annotdense"]
